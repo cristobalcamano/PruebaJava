@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "b00df151-42f0-4839-abaa-e2896c8b2245",
+		"name": "Activos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver Activos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/activo/listar?filtro=fecha-compra&valor=02/02/2021",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"activo",
+						"listar"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "fecha-compra"
+						},
+						{
+							"key": "valor",
+							"value": "02/02/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Activ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/activo/activos-por-tipo/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"activo",
+						"activos-por-tipo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Activo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n        {\r\n            \"nombre\": \"activo20\",\r\n            \"descripcion\": \"descripcion20\",\r\n            \"serial\": \"serial20\",\r\n            \"inventario\": \"inventario20\",\r\n            \"peso\": 3.3,\r\n            \"alto\": 2.0,\r\n            \"ancho\": 3.5,\r\n            \"largo\": 2.1,\r\n            \"valorCompra\": 200.0,\r\n            \"color\": \"rojo\",\r\n            \"estado\": {\r\n                \"id\": 1,\r\n                \"nombre\": \"activo\",\r\n                \"descripcion\": \"activo\",\r\n                \"hibernateLazyInitializer\": {}\r\n            },\r\n            \"ciudad\": {\r\n                \"id\": 1,\r\n                \"nombre\": \"Bogota\",\r\n                \"telefono\": \"maquina de hacer cosas\",\r\n                \"hibernateLazyInitializer\": {}\r\n            },\r\n            \"tipo\": {\r\n                \"id\": 1,\r\n                \"nombre\": \"maquina1\",\r\n                \"descripcion\": \"maquina de hacer cosas\",\r\n                \"hibernateLazyInitializer\": {}\r\n            }\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/activo/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"activo",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

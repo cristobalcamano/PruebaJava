@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "a68e66c5-a2ce-4f83-8f1c-6108c4e1622b",
+		"name": "Registro Asigaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver Asignaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/registro/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"registro",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"observacion\":\"hdsfjd\",\r\n\t\"estado\":1\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9006/registro/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"registro",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

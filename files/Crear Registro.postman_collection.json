@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "fdeecd68-53dc-4208-ab56-22f06dabb275",
+		"name": "Crear Registro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CrearRegistro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\":\"\"\r\n\t\"observacion\":\"sdfsdf\"\r\n\t\"estado\":1\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9007/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "9007",
+					"path": [
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
